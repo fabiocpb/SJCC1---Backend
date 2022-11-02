@@ -2,6 +2,17 @@
 <html lang="pt-BR">
 
 <head>
+
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" href="/stylesheets/sjcc.css">
+ 
+     <title>Busca e Montagem de Layout de Vìdeo</title>
+
 </head>
 
 <body class="body-busca">
@@ -16,7 +27,7 @@
                     
                     <div class="cel-header">
 
-                        <img src="/images/logo-jc.png" class="d-flex justify-content-center" alt="logo jc"
+                        <img src="./images/logo-jc.png" class="d-flex justify-content-center" alt="logo jc"
                             style="width: 25%; height: 80%; text-align:center; padding:20px; margin:auto">
                         <p class="titulo_pag_tags"> Gerador de layouts de vídeos para rodapé de matérias</p>
                     
@@ -236,12 +247,10 @@
 
             <!-- Seção de gerar layout -->
             <div class="card-header"
-                style="border-radius: 25px; border-top-right-radius: 25px; background-color: white; width: ; margin-top: 2%;">
+                style="border-radius: 25px; border-top-right-radius: 25px; background-color: white; margin-top: 2%;">
                 <div class="col-4" style="margin-left: 30%; margin-top: 1%">
-                    <button type="submit" class="btn btn-primary"
-                            style="padding: 5px; background-color: red; width: 450px; height: 60px; border-radius: 10px; margin-bottom: 2%">Gerar
-                            Layout</button>
-                    {{!-- <a id="link-prev" href="" style="text-align: center;" target="iframe_prev"></a> --}}
+                    <button type="submit" class="btn btn-primary" style="padding: 5px; background-color: red; width: 450px; height: 60px; border-radius: 10px; margin-bottom: 2%">Gerar Layout</button>
+                   <!--  <a id="link-prev" href="" style="text-align: center;" target="iframe_prev"></a> -->
                 </div>
             </div>
 
@@ -280,7 +289,7 @@
 
                                     <div class="input-group" style="position: relative;"> 
 
-                                        <textarea id="areaCodigo" class="form-control" aria-label="With textarea" readonly style="height: 500px; position: relative;">{{codigo}}</textarea>
+                                        <textarea id="areaCodigo" class="form-control" aria-label="With textarea" readonly style="height: 500px; position: relative;"></textarea>
                                         <a onclick="copiarCodigo()"><span class="icon-user" style="position: relative; left: 10px"><i class="bi bi-filetype-html" style="font-size: 30px;"></i></span></a>
                                         <!-- position: absolute; left: 1205px; top: 5px; Icone acima da caixa de texto-->
                                     </div>
@@ -299,9 +308,9 @@
 
                                     <hr>
 
-                                    <div id="preview">{{preview}}</div>
+                                    <div id="preview"></div>
 
-                                    {{!-- <iframe sandbox="allow-presentation allow-same-origin allow-scripts" src="/index-materia-lista/" height="500" width="1260" title="Iframe Preview" style="border: 13px;" name="iframe_prev" id="iframe-prev"></iframe> --}}
+                                    <!-- <iframe sandbox="allow-presentation allow-same-origin allow-scripts" src="/index-materia-lista/" height="500" width="1260" title="Iframe Preview" style="border: 13px;" name="iframe_prev" id="iframe-prev"></iframe> -->
 
                                 </div>
                             </div>

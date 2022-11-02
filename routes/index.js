@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 const session = require('express-session');
 const passport = require('passport');
-var {pegarVideos} = require('./pegar-videos');
 var {gerarCodigo} = require('./gerar-codigo');
 require('./auth');
 
