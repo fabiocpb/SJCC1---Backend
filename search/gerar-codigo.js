@@ -1,7 +1,5 @@
-const fs = require("fs");
-const fetch = require("node-fetch");
 const layouts = require("./layout-helpers");
-var {pegarVideos} = require('./pegar-videos');
+const {pegarVideos} = require('./pegar-videos');
 
 async function gerarCodigo(optLayout, titRodape, query, resultsPerPage, order){
 
